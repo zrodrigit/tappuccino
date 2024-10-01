@@ -11,9 +11,11 @@ body {
   background-color: black;
 }
 canvas {
+  height: 100vh;
   aspect-ratio: 9 / 16;
-
-  image-rendering: optimizeSpeed;
-  image-rendering: crisp-edges;
   image-rendering: pixelated;
+}
+
+canvas > * {
+  aspect-ratio: initial;
 }
